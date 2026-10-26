@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">STUDENT WORKSPACE</p>
+        <h1>Student Task Manager</h1>
+        <p class="subtitle">Plan your work. Track your progress. Stay on top of deadlines.</p>
+      </div>
+      <div class="date-card">
+        <span id="today-label">TODAY</span>
+        <strong id="today-date">—</strong>
+      </div>
+    </header>
+
+    <section class="summary" aria-label="Task summary">
+      <article class="summary-card"><span>Total tasks</span><strong id="total-count">0</strong></article>
+      <article class="summary-card"><span>In progress</span><strong id="progress-count">0</strong></article>
+      <article class="summary-card"><span>Completed</span><strong id="completed-count">0</strong></article>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div><p class="eyebrow">YOUR LIST</p><h2>Tasks</h2></div>
+        <label class="filter-label" for="status-filter">Show
+          <select id="status-filter">
+            <option value="all">All tasks</option>
+            <option value="pending">To do</option>
+            <option value="progress">In progress</option>
+            <option value="completed">Completed</option>
+          </select>
+        </label>
+      </div>
+
+      <form id="task-form" class="task-form">
+        <label class="sr-only" for="task-title">Task title</label>
+        <input id="task-title" name="title" type="text" placeholder="e.g. Finish DevOps lab report" maxlength="100" required>
+        <label class="sr-only" for="task-due">Due date</label>
+        <input id="task-due" name="due" type="date" aria-label="Due date">
+        <button type="submit">+ Add task</button>
+      </form>
+
+      <p id="empty-state" class="empty-state">No tasks yet. Add your first task above.</p>
+      <ul id="task-list" class="task-list" aria-live="polite"></ul>
+      <footer class="panel-footer"><span id="task-message">Your tasks are saved in this browser.</span><button id="clear-completed" class="text-button" type="button">Clear completed</button></footer>
+    </section>
+    <footer class="page-footer">Built for the Git Basics and Version Control lab · Assignment 1</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
