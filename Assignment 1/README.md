@@ -48,7 +48,7 @@ The following Git and GitHub operations are covered in this assignment:
 The Student Task Manager Web Application was organized in a GitHub repository to demonstrate basic Git and GitHub version control concepts, including tracking changes, committing files, branching, merging, and maintaining project history.
 
 ## Repository
-[DevOps-for-Scalable-Systems-Lab-DOSSL-](https://github.com/kamblepranjali88-code/DevOps-for-Scalable-Systems-Lab-DOSSL-)
+[DevOps-for-Scalable-Systems-Lab-DOSSL-](https://github.com/kamblepranjali88-code/DevOps-for-Scalable-Systems-Lab-DOSSL)
 
 ## Evidence
 Screenshots documenting the repository setup, application interface, and Git operations are stored in the `screenshots/` folder. Add your own screenshots as you complete each operation.
